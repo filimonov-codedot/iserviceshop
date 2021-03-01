@@ -9,7 +9,6 @@ try {
         phoneModal.classList.remove('show-phone-modal')
       if (show && !phoneModal.classList.contains('show-phone-modal'))
         phoneModal.classList.add('show-phone-modal')
-      console.log('test')
     }
     phoneModalToggle.addEventListener('click', () => handleModalToggle(true))
     phoneModalClose.addEventListener('click', () => handleModalToggle(false))
