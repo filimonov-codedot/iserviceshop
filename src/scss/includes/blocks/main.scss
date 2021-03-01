@@ -17,7 +17,7 @@
 
 .phone-modal-overlay {
   position: fixed;
-  z-index: 1;
+  z-index: 98;
   top: 0;
   right: 0;
   bottom: 0;
@@ -31,7 +31,7 @@
 
 .phone-modal {
   position: fixed;
-  z-index: 2;
+  z-index: 99;
   top: 20px;
   right: 20px;
   bottom: 20px;
@@ -39,11 +39,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
   pointer-events: none;
 
-  &.show + .phone-modal-overlay {
+  &.show-phone-modal + .phone-modal-overlay {
     pointer-events: auto;
     opacity: 1;
   }
@@ -75,7 +73,7 @@
     }
   }
 
-  &.show > .phone-modal__container {
+  &.show-phone-modal > .phone-modal__container {
     pointer-events: auto;
     opacity: 1;
   }
@@ -264,3 +262,4 @@
     }
   }
 }
+.phone-modal .phone-modal__content::-webkit-scrollbar{display:none!important}

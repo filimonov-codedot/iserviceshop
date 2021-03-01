@@ -5,10 +5,10 @@ try {
   const phoneModalOverlay = document.querySelector('.phone-modal-overlay')
   if (phoneModal && phoneModalToggle && phoneModalClose && phoneModalOverlay) {
     const handleModalToggle = (show) => {
-      if (!show && phoneModal.classList.contains('show'))
-        phoneModal.classList.remove('show')
-      if (show && !phoneModal.classList.contains('show'))
-        phoneModal.classList.add('show')
+      if (!show && phoneModal.classList.contains('show-phone-modal'))
+        phoneModal.classList.remove('show-phone-modal')
+      if (show && !phoneModal.classList.contains('show-phone-modal'))
+        phoneModal.classList.add('show-phone-modal')
       console.log('test')
     }
     phoneModalToggle.addEventListener('click', () => handleModalToggle(true))
